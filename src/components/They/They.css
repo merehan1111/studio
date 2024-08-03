@@ -1,0 +1,113 @@
+/* .explore-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.explore-menu h1{
+    color: #262626;
+    font-weight: 500;
+}
+.explore-menu-text{
+    max-width: 60%;
+    columns: #808080;
+}
+.explore-menu-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    margin: 20px 0px;
+    overflow-x: scroll;
+}
+.explore-menu-list::-webkit-scrollbar{
+    display: none;
+}
+.explore-menu-list-item img{
+    width: 7.5vw;
+    min-width: 88px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.2s;
+
+}
+.explore-menu-list-item p{
+    color: #747474;
+    margin-top: 10px;
+    font-size: max(1.4vw,16px);
+    cursor: pointer;
+}
+.explore-menu hr{
+    margin: 10px 0px;
+    height: 2px;
+    background-color: #e2e2e2;
+    border: none;
+}
+.explore-menu-list-item .active{
+    border: 4px solid tomato;
+    padding: 2px;
+}
+@media (max-width:1050px){
+  .explore-menu-text{
+   max-width:100%;
+   font-size: 14px;
+  }
+} */
+/* Style for the ExploreMenu component */
+/* Container for the ExploreMenu component */
+/* Container for the ExploreMenu component */
+.explore-container {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    width: 100%; /* Full width for the container */
+    margin: 0 auto; /* Center the container */
+    box-sizing: border-box; /* Include padding and border in total width */
+  }
+  
+  /* Style for each flex item */
+  .explore-image, .explore-menu {
+    width: 50%; /* Each takes 50% of the width */
+    padding: 25px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding and border in total width */
+  }
+  
+  /* Styling for the text section */
+  .explore-menu {
+    direction: rtl; /* Set text direction to right-to-left */
+    font-family: 'Arial', sans-serif; /* Set a readable font */
+    line-height: 2; /* Improve text readability */
+    font-size: 20px;
+   
+    
+    max-width: 100%; /* Ensure it doesn't exceed the available width */
+  }
+  
+  /* Styling for the image section */
+  .explore-image img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Match the rounded corners of the text */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .explore-image, .explore-menu {
+      width: 100%; /* Full width for each section on smaller screens */
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+  }
+  @media (max-width: 480px) {
+    .explore-container {
+      padding: 10px; /* Reduce padding on very small screens */
+    }
+  
+    .explore-menu h1 {
+      font-size: 1.6em; /* Further adjust heading size */
+    }
+  
+    .explore-menu p {
+      font-size: 14px; /* Smaller font size for very small screens */
+    }
+  }
+  
+  
