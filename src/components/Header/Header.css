@@ -1,7 +1,7 @@
 .header {
     height: 34vw; /* Keeps height proportional to width */
     margin: 30px auto;
-    background: url('/public/hhhhead.jpeg') no-repeat center center; /* Centers the image */
+    background: url('/public/home.jpeg') no-repeat center center; /* Centers the image */
     background-size: cover; /* Ensures the image covers the entire header */
     position: relative;
     width: 100%; /* Ensure the header takes full width */

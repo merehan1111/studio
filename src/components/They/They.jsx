@@ -5,7 +5,7 @@ function They() {
   return (
     <div className="explore-container">
       <div className="explore-image">
-        <img src="./head2.JPG" alt="Header" />
+        <img src="who.jpg" alt="Header" />
       </div>
       <div className="explore-menu">
         <h1>من نحن</h1>

@@ -7,7 +7,7 @@ function Quality() {
       <h1>جودتنا</h1>
       <div className="quality-content">
         <div className="quality-image">
-          <img src="./quality.jpg" alt="Quality" />
+          <img src="quali.jpg" alt="Quality" />
         </div>
         <div className="quality-text">
           <p>
