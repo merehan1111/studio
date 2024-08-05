@@ -53,8 +53,8 @@ function Footer() {
       </div>
       <div className="footer-item">
         <MdEmail className="footer-icon" />
-        <a href="mailto:oneShoot@gmail.com" className="footer-link">
-          oneShoot@gmail.com
+        <a href="mailto:cs@oneshooot.com " className="footer-link">
+        cs@oneshooot.com 
         </a>
       </div>
       <div className="footer-item">
