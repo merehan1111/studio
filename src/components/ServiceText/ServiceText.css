@@ -14,6 +14,7 @@
 } */
 
 
+
 /* FoodDisplay.css */
 .food-display {
   font-family: 'Arial', sans-serif;
@@ -46,7 +47,7 @@
   padding: 10px;
   text-align: center;
   background-color: #ffffff;
-  font-size: 1.1em;
+  font-size: 2.1em;
   font-weight: 600;
   border-radius: 6px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -56,26 +57,14 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .food-display h2 {
-    font-size: 1.8em; /* Adjust heading size for smaller screens */
+    font-size: 2.8em; /* Adjust heading size for smaller screens */
   }
-
   .food-display .paragraph-group {
-    justify-content: center; /* Center paragraphs on smaller screens */
+    /* flex-wrap: nowrap; */
+    margin: auto;
   }
-
   .food-display p {
-    flex: 1 1 calc(50% - 20px); /* Two columns on tablet size */
-    font-size: 1em; /* Adjust font size for smaller screens */
+    font-size: 2em; /* Adjust font size for smaller screens */
   }
 }
 
-@media (max-width: 480px) {
-  .food-display h2 {
-    font-size: 1.6em; /* Further adjust heading size */
-  }
-
-  .food-display p {
-    flex: 1 1 100%; /* Full width on very small screens */
-    font-size: 0.9em; /* Smaller font size for very small screens */
-  }
-}

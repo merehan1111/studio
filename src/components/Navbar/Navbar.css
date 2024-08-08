@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
     padding: 20px 0px;
     display: flex;
     justify-content: space-between;
@@ -73,7 +73,7 @@
     cursor: pointer;
   }
   
-  /* Media Queries */
+ 
   @media (max-width: 1050px) {
     .navbar .logo {
       width: 140px;
@@ -142,4 +142,153 @@
       display: block;
     }
   }
+   */
+
+   .navbar {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   
+  .navbar .logo {
+    width: 150px;
+  }
+  
+  .navbar-menu {
+    direction: rtl;
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    color: #49557e;
+    font-family: "Outfit", sans-serif;
+    font-size: 25px;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .navbar-right img {
+    width: 25px;
+  }
+  
+  .navbar button {
+    background: transparent;
+    font-size: 16px;
+    padding: 10px 30px;
+    color: #49557e;
+    border: 1px solid tomato;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .navbar button:hover {
+    background-color: #fff4f2;
+  }
+  
+  .navbar .active {
+    padding-bottom: 2px;
+    border-bottom: 2px solid #49557e;
+  }
+  
+  .navbar li {
+    cursor: pointer;
+  }
+  
+  .navbar-search-icon {
+    position: relative;
+    font-size: 30px;
+  }
+  
+  .navbar-search-icon .dot {
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: tomato;
+    border-radius: 5px;
+    top: -8px;
+    right: -8px;
+  }
+  
+  .hamburger-menu {
+    display: none;
+    cursor: pointer;
+    
+  }
+  
+  /* Media Queries */
+  @media (max-width: 1050px) {
+    .navbar .logo {
+      width: 140px;
+    }
+    .navbar-menu {
+      gap: 20px;
+      font-size: 17px;
+    }
+    .navbar-right {
+      gap: 30px;
+    }
+    .navbar-right img {
+      width: 22px;
+    }
+    .navbar-right button {
+      padding: 8px 25px;
+      font-size: 15px;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .navbar .logo {
+      width: 130px;
+    }
+    .navbar-menu {
+      gap: 15px;
+      font-size: 16px;
+    }
+    .navbar-right {
+      gap: 20px;
+    }
+    .navbar-right img {
+      width: 20px;
+    }
+    .navbar-right button {
+      padding: 7px 20px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 750px) {
+    .navbar-menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: white;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: 200px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+    
+    .navbar-menu.open {
+      display: flex;
+    }
+    
+    .navbar-right {
+      gap: 10px;
+    }
+  
+    .hamburger-menu {
+      display: block;
+      z-index: 999;
+    }
+  }
+  
+   

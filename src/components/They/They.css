@@ -57,57 +57,57 @@
 /* Container for the ExploreMenu component */
 /* Container for the ExploreMenu component */
 .explore-container {
-    display: flex; /* Use flexbox for layout */
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
-    width: 100%; /* Full width for the container */
-    margin: 0 auto; /* Center the container */
-    box-sizing: border-box; /* Include padding and border in total width */
-  }
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  width: 100%; /* Full width for the container */
+  margin: 0 auto; /* Center the container */
+  box-sizing: border-box; /* Include padding and border in total width */
+}
+
+/* Style for each flex item */
+.explore-image, .explore-menu {
+  width: 50%; /* Each takes 50% of the width */
+  padding: 25px; /* Add padding for spacing */
+  box-sizing: border-box; /* Include padding and border in total width */
+}
+
+/* Styling for the text section */
+.explore-menu {
+  direction: rtl; /* Set text direction to right-to-left */
+  font-family: 'Arial', sans-serif; /* Set a readable font */
+  line-height: 2; /* Improve text readability */
+  font-size: 20px;
+ 
   
-  /* Style for each flex item */
+  max-width: 100%; /* Ensure it doesn't exceed the available width */
+}
+
+/* Styling for the image section */
+.explore-image img {
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Match the rounded corners of the text */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
   .explore-image, .explore-menu {
-    width: 50%; /* Each takes 50% of the width */
-    padding: 25px; /* Add padding for spacing */
-    box-sizing: border-box; /* Include padding and border in total width */
+    width: 80%; /* Full width for each section on smaller screens */
+    padding: 10px; /* Adjust padding for smaller screens */
+    margin: auto;
   }
-  
-  /* Styling for the text section */
-  .explore-menu {
-    direction: rtl; /* Set text direction to right-to-left */
-    font-family: 'Arial', sans-serif; /* Set a readable font */
-    line-height: 2; /* Improve text readability */
-    font-size: 20px;
-   
-    
-    max-width: 100%; /* Ensure it doesn't exceed the available width */
+}
+@media (max-width: 480px) {
+  .explore-container {
+    padding: 10px; /* Reduce padding on very small screens */
   }
-  
-  /* Styling for the image section */
-  .explore-image img {
-    width: 100%; /* Make the image responsive */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Match the rounded corners of the text */
+
+  .explore-menu h1 {
+    font-size: 1.6em; /* Further adjust heading size */
   }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .explore-image, .explore-menu {
-      width: 100%; /* Full width for each section on smaller screens */
-      padding: 10px; /* Adjust padding for smaller screens */
-    }
+
+  .explore-menu p {
+    font-size: 14px; /* Smaller font size for very small screens */
   }
-  @media (max-width: 480px) {
-    .explore-container {
-      padding: 10px; /* Reduce padding on very small screens */
-    }
-  
-    .explore-menu h1 {
-      font-size: 1.6em; /* Further adjust heading size */
-    }
-  
-    .explore-menu p {
-      font-size: 14px; /* Smaller font size for very small screens */
-    }
-  }
-  
-  
+}
+
