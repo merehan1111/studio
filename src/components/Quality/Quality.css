@@ -56,10 +56,16 @@
   }
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
 .quality-container {
-  padding: 15px; /* Reduce padding on very small screens */
-}
+  padding: 15px; 
+} */
+@media (max-width: 560px) {
+  .quality-container {
+    width: 50%;
+   
+  }
+  
 
 
 .quality-text {
