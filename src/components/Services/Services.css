@@ -1,64 +1,27 @@
+/* AppDownload.css */
 .app-download {
   font-family: 'Arial', sans-serif;
-  padding: 20px;
-  /* background-color: #f8f8f8; */
-  border-radius: 8px;
 }
 
-
 .app-download h3 {
-  text-align: center;
   color: #080707;
   font-size: 30px;
   font-weight: 600;
-  margin-bottom: 20px;
 }
 
 .image-group img {
-  flex: 1; /* Allows images to grow equally and fill the container */
-  max-width: 100%; 
- margin: 10px 0;
+  width: 100%; /* Ensure images are responsive */
   height: auto; /* Maintain aspect ratio */
-  border-radius: 8px; /* Optional: Adds rounded corners to images */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
-
-/* Fade-in animation */
-opacity: 0; /* Start invisible */
-animation: fadeIn 1s ease-in forwards; /* 1 second fade-in animation */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
+
+/* Optional: Fade-in animation if desired */
 @keyframes fadeIn {
   from {
-    opacity: 0; /* Start at 0% opacity */
+    opacity: 0;
   }
   to {
-    opacity: 1; /* End at 100% opacity */
-  }
-}
-
-
-@media (max-width: 768px) {
-
-  .image-group img {
-    margin-bottom: 10px; /* Add space between images when stacked */
-  }
-}
-
-@media (max-width: 550px ) {
-  .app-download {
-    padding: 15px;
-  }
-
-  .app-download h3 {
-    font-size: 40px;
-  }
-
-  .image-group {
-   width: 100%;
-    margin: 0 auto;
-  }
-
-  .image-group img {
-    width: 100%; /* Images take full width */
-    margin-bottom: 15px; /* Add space between images when stacked */
+    opacity: 1;
   }
 }

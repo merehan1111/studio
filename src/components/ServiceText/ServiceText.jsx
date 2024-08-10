@@ -1,55 +1,112 @@
-
 import React from 'react';
-import './ServiceText.css';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './ServiceText.css'; // Optional for additional custom styling
+import Services from '../Services/Services'
 function ServiceText() {
   return (
-    <div className="food-display">
-      <h2>خدماتنا</h2>
+    <div className="container my-5">
+      <h2 className=" mb-4">خدماتنا</h2>
+      <div className="row g-4">
+        <div className="col-md-4">
+          <div className="p-3 bg-white rounded shadow-sm text-center">
+            <p>تاجير معدات التصوير والتلفزيون من شاشات وكاميرا واجهزه الميكسر والاضاءة والاجهزة الصوتية والسماعات</p>
+          </div>
+        </div>
+        <div className="col-md-4">
+          <div className="p-3 bg-white rounded shadow-sm text-center">
+            <p>تصميم وتنفيذ التصاميم بكافة انواعه الثابت والمتحرك ابتكار الهويه البصرية واستراتيجيات العلامة التجاريه</p>
+          </div>
+        </div>
+        <div className="col-md-4">
+          <div className="p-3 bg-white rounded shadow-sm text-center">
+            <p>تنظيم الفعاليات المؤتمرات وتجهيز كافة الاحتياجات التقنية والبشرية</p>
+          </div>
+        </div>
 
-      {/* First group of paragraphs */}
-      <div className="paragraph-group">
-        <p>تاجير معدات التصوير والتلفزيون من شاشات وكاميرا واجهزه الميكسر والاضاءة والاجهزة الصوتية والسماعات</p>
-        <p>تصميم وتنفيذ التصاميم بكافة انواعه الثابت والمتحرك ابتكار الهويه البصرية واستراتيجيات العلامة التجاريه</p>
-        <p>تنظيم الفعاليات المؤتمرات وتجهيز كافة الاحتياجات التقنية والبشرية</p>
-      </div>
+        <div className="col-md-4">
+          <div className="p-3 bg-white rounded shadow-sm text-center">
+            <p>صناعة المونتاج والمكساج على احدث الاجهزة والبرامج</p>
+          </div>
+        </div>
+        <div className="col-md-4">
+          <div className="p-3 bg-white rounded shadow-sm text-center">
+            <p>(بورتريه)تصوير الاشخاص</p>
+          </div>
+        </div>
+        <div className="col-md-4">
+          <div className="p-3 bg-white rounded shadow-sm text-center">
+            <p>تصوير المنتجات</p>
+          </div>
+        </div>
 
-      {/* Second group of paragraphs */}
-      <div className="paragraph-group">
-        <p>صناعة المونتاج والمكساج على احدث الاجهزة والبرامج</p>
-        <p>(بورتريه)تصوير الاشخاص</p>
-        <p>تصوير المنتجات</p>
-      </div>
+        <div className="col-md-4">
+          <div className="p-3 bg-white rounded shadow-sm text-center">
+            <p>تصوير مقابلات</p>
+          </div>
+        </div>
+        <div className="col-md-4">
+          <div className="p-3 bg-white rounded shadow-sm text-center">
+            <p>تصوير برومو</p>
+          </div>
+        </div>
+        <div className="col-md-4">
+          <div className="p-3 bg-white rounded shadow-sm text-center">
+            <p>تصوير اعلانات</p>
+          </div>
+        </div>
 
-      {/* Third group of paragraphs */}
-      <div className="paragraph-group">
-        <p>تصوير مقابلات</p>
-        <p>تصوير برومو</p>
-        <p>تصوير اعلانات</p>
-      </div>
+        <div className="col-md-4">
+          <div className="p-3 bg-white rounded shadow-sm text-center">
+            <p>تصوير افلام</p>
+          </div>
+        </div>
+        <div className="col-md-4">
+          <div className="p-3 bg-white rounded shadow-sm text-center">
+            <p>تصوير مباني</p>
+          </div>
+        </div>
+        <div className="col-md-4">
+          <div className="p-3 bg-white rounded shadow-sm text-center">
+            <p>تصوير مؤتمرات ومهرجانات</p>
+          </div>
+        </div>
 
-      {/* Fourth group of paragraphs */}
-      <div className="paragraph-group">
-        <p>تصوير افلام</p>
-        <p>تصوير مباني</p>
-        <p>تصوير مؤتمرات ومهرجانات</p>
-      </div>
+        <div className="col-md-4">
+          <div className="p-3 bg-white rounded shadow-sm text-center">
+            <p>اخراج تلفزيوني</p>
+          </div>
+        </div>
+        <div className="col-md-4">
+          <div className="p-3 bg-white rounded shadow-sm text-center">
+            <p>اخراج مباشر</p>
+          </div>
+        </div>
+        <div className="col-md-4">
+          <div className="p-3 bg-white rounded shadow-sm text-center">
+            <p>برودكاست</p>
+          </div>
+        </div>
 
-      {/* Fifth group of paragraphs */}
-      <div className="paragraph-group">
-        <p>اخراج تلفزيوني</p>
-        <p>اخراج مباشر</p>
-        <p>برودكاست</p>
+        <div className="col-md-4">
+          <div className="p-3 bg-white rounded shadow-sm text-center">
+            <p>اضاءة وشاشات</p>
+          </div>
+        </div>
+        <div className="col-md-4">
+          <div className="p-3 bg-white rounded shadow-sm text-center">
+            <p>صوتيات</p>
+          </div>
+        </div>
+        <div className="col-md-4">
+          <div className="p-3 bg-white rounded shadow-sm text-center">
+            <p>وانميشن وجرافيكس D2 or D3 مونتاج</p>
+          </div>
+        </div>
       </div>
-
-      {/* Sixth group of paragraphs */}
-      <div className="paragraph-group">
-        <p>اضاءة وشاشات</p>
-        <p>صوتيات</p>
-        <p>وانميشن وجرافيكس D2 or D3 مونتاج</p>
-      </div>
+      <Services/>
     </div>
   );
 }
 
 export default ServiceText;
+

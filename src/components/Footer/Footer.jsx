@@ -39,41 +39,57 @@
 //   )
 // }
 
-// export default Footer
+//export default Footer
 import React from 'react';
-import './Footer.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './Footer.css'; // Optional, if you still need custom styles
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt, FaInstagramSquare, FaTwitter } from "react-icons/fa";
 
 function Footer() {
   return (
-    <div className="footer">
-      <div className="footer-content-left">
-        <img src="./logo one shoot.png" alt="Logo" className="footer-logo" />
+    <footer className="footer bg-light py-5">
+      <div className="container">
+        <div className="row text-center text-md-left">
+          <div className="col-md-2 mb-4 mb-md-0">
+            <img src="./logo one shoot.png" alt="Logo" className="footer-logo" />
+          </div>
+          <div className="col-md-3 mb-4 mb-md-0 py-4">
+            <div className="d-flex align-items-center justify-content-center justify-content-md-center">
+              <MdEmail className="footer-icon me-2" />
+              <a href="mailto:cs@oneshooot.com" className="footer-link">
+                cs@oneshooot.com
+              </a>
+            </div>
+          </div>
+          <div className="col-md-3 mb-3 mb-md-0 py-4">
+            <div className="d-flex align-items-center justify-content-center justify-content-md-center">
+              <FaPhoneAlt className="footer-icon me-2" />
+              <p className="mb-0">+966500243099</p>
+            </div>
+          </div>
+          <div className="col-md-2 mb-4 mb-md-0 py-4">
+            <div className="d-flex align-items-center justify-content-center justify-content-md-center">
+              <FaInstagramSquare className="footer-icon me-2" />
+              <a href="https://instagram.com/mf84gd/" target="_blank" rel="noopener noreferrer" className="footer-link">
+                Instagram
+              </a>
+            </div>
+            </div>
+            <div className='col-md-2 mb-4 mb-md-0 py-4'>
+            <div className="d-flex align-items-center justify-content-center justify-content-md-center">
+              <FaTwitter className="footer-icon me-2" />
+              <a href="https://twitter.com/mf84gd/" target="_blank" rel="noopener noreferrer" className="footer-link">
+                Twitter
+              </a>
+            </div>
+
+            </div>
+            
+         
+        </div>
       </div>
-      <div className="footer-item">
-        <MdEmail className="footer-icon" />
-        <a href="mailto:cs@oneshooot.com " className="footer-link">
-        cs@oneshooot.com 
-        </a>
-      </div>
-      <div className="footer-item">
-        <FaPhoneAlt className="footer-icon" />
-        <p>+966500243099</p>
-      </div>
-      <div className="footer-item">
-        <FaInstagramSquare className="footer-icon" />
-        <a href="https://instagram.com/mf84gd/" target="_blank" rel="noopener noreferrer" className="footer-link">
-          Instagram
-        </a>
-      </div>
-      <div className="footer-item">
-        <FaTwitter className="footer-icon" />
-        <a href="https://twitter.com/mf84gd/" target="_blank" rel="noopener noreferrer" className="footer-link">
-          Twitter
-        </a>
-      </div>
-    </div>
+    </footer>
   );
 }
 

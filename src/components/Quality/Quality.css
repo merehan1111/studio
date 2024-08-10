@@ -1,81 +1,33 @@
+/* Quality.css */
 .quality-container {
-  max-width: 1200px; /* Optional: Define a max width */
-  margin: 0 auto; /* Center the container */
-  padding: 30px;
-  font-size: 25px;
-  text-align: right;
+  font-family: 'Arial', sans-serif; /* Set a readable font */
+  font-size: 1.5rem; /* Adjust font size for better readability */
+  text-align: right; /* Align text to the right */
+}
+
+.quality-image img {
+  width: 100%; /* Ensure image fills its container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+.container h1{
   font-weight: bold;
 }
 
-.quality-content {
-  display: flex;
-  justify-content: space-between; /* Distribute space evenly */
-  /* align-items: center;  */
-  gap: 20px; /* Add some space between the text and image */
-
-  font-weight: 500;
-
-  font-family: 'Arial', sans-serif; /* Set a readable font */
-  line-height: 2; /* Improve text readability */
-  font-size: 20px;
- 
-  
- 
-}
-.quality-text{
-  padding-top: 40px;
-}
-
-.quality-image,
 .quality-text {
-  flex: 1; /* Each takes up equal width */
+ /* Add padding to the top */
+  line-height: 1.5; /* Improve text readability */
 }
-
-.quality-image img {
-  width:100%; /* Ensure image fills its container */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 8px; /* Optional: Add rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+.quality-text p{
+  font-size: 30px;
 }
+ 
 
-.quality-text {
-  text-align: right; /* Align text to the right */
-  font-size: 1.2em; /* Adjust text size */
-  direction: rtl; /* Ensure text is rendered right-to-left */
-}
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .quality-content {
-    flex-direction: column; /* Stack items vertically on smaller screens */
-    align-items: flex-start; /* Align items to the start */
-  }
 
+@media (max-width: 576px) {
   .quality-text {
-    text-align: justify; /* Adjust text alignment for narrow screens */
+    font-size: 1rem; /* Adjust font size on smaller screens */
   }
-}
-
-/* @media (max-width: 480px) {
-.quality-container {
-  padding: 15px; 
-} */
-@media (max-width: 560px) {
-  .quality-container {
-    width: 50%;
-   
-  }
-  
-
-
-.quality-text {
-  font-size: 0.9em; /* Reduce font size further for very small screens */
-  padding-top: 20px; /* Reduce padding-top */
-}
-
-.quality-image img {
-  border-radius: 4px; 
-  width: 80%;
-  margin: auto;/* Reduce border-radius for smaller screens */
-}
 }

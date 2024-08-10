@@ -1,16 +1,18 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './Header.css';
+
 function Header() {
   return (
-    <div className='header'>
-        {/* <div className='header-content'>
-        <h2>Order your favourite food here</h2>
-        <p>Choose from a diverse menu featuring a delectable array of dishes our mission is to satisfy your carving and elevant your dining experience.one delicious meal at atime </p>
-        <button>View Menu</button>
-        </div> */}
-    </div>
-  )
+    <header className="header d-flex align-items-center justify-content-center">
+      <div className="container text-center">
+        <h1 className="display-4 text-light">Welcome to Our Site</h1>
+        <p className="lead text-light">Discover our services and offerings</p>
+      </div>
+    </header>
+  );
 }
 
-export default Header
+export default Header;
+
 
