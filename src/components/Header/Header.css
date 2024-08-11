@@ -1,6 +1,6 @@
 /* Header.css */
 .header {
-    height: 34vw; /* Adjust this as needed for responsiveness */
+    height: 100vh; /* Adjust this as needed for responsiveness */
     margin: 5px auto;
     background: url('/public/home.jpeg') no-repeat center center;
     background-size: cover;
