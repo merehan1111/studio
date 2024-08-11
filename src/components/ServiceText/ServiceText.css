@@ -3,6 +3,7 @@
   font-family: 'Arial', sans-serif;
 }
 
+
 .food-display h2 {
   color: #333;
   font-size: 2em;
@@ -11,6 +12,9 @@
   direction: rtl;
   font-weight: bold;
 }
+/* .hi{
+  height: 100vh;
+} */
 
 .food-display .paragraph-group {
   margin-bottom: 20px;

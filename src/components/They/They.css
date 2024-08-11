@@ -9,6 +9,9 @@
 .explore-menu h1{
   font-weight: bold;
 }
+.hello{
+  height: 100vh;
+}
 .explore-menu p{
   font-size: 25px;
   margin-top: 15px;

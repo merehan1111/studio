@@ -4,7 +4,7 @@ import './They.css'; // Optional for additional custom styling
 
 function They() {
   return (
-    <div className="container my-5">
+    <div className="container my-5 hello">
       <div className="row">
         <div className="col-md-6 mb-4 mb-md-0">
           <div className="explore-image">
