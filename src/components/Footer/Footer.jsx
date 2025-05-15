@@ -40,6 +40,7 @@
 // }
 
 //export default Footer
+
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Footer.css'; // Optional, if you still need custom styles
@@ -94,3 +95,4 @@ function Footer() {
 }
 
 export default Footer;
+ 
