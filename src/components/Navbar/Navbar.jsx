@@ -17,7 +17,7 @@ function Navbar({ setShowLogin }) {
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container">
         <Link to='/home' className="navbar-brand">
-          <img src='./logo one shoot.png' className='logo' alt='logo' style={{ width: '120px' }} />
+          <img src='./new logo.png' className='logo' alt='logo' style={{ width: '120px' }} />
         </Link>
         <button className="navbar-toggler" type="button" onClick={toggleMenu}>
           <IoMenuOutline size={30} />

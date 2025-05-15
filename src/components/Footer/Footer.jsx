@@ -52,7 +52,7 @@ function Footer() {
       <div className="container">
         <div className="row text-center text-md-left">
           <div className="col-md-2 mb-4 mb-md-0">
-            <img src="./logo one shoot.png" alt="Logo" className="footer-logo" />
+            <img src="./new logo.png" alt="Logo" className="footer-logo" />
           </div>
           <div className="col-md-3 mb-4 mb-md-0 py-4">
             <div className="d-flex align-items-center justify-content-center justify-content-md-center">
